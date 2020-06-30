@@ -13,7 +13,7 @@ TOKEN = process.env.ACCESS_TOKEN;
 
 const client = github.client(TOKEN);
 let combinedArray = [];
-
+//
 const repo = client.repo(REPO);
 repo.branches(function (err, data, headers) {
     let combinedPromise = [];
